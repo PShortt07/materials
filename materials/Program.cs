@@ -10,8 +10,6 @@ namespace materials
     {
         static void Main(string[] args)
         {
-            double width = 0;
-            double height = 0;
             double woodlength = 0;
             double glassarea = 0;
             const double Max_Width = 5.0;
@@ -32,7 +30,7 @@ namespace materials
                 Console.WriteLine($"Width is too large. \n\n Use {Max_Width}");
                 width = Max_Width;
             }
-            Console.WriteLine("Input window height: ");
+            Console.Write("Input window height: ");
             string heightString = Console.ReadLine();
             double height = double.Parse(heightString);
             if (height < Min_Height) 
@@ -47,8 +45,8 @@ namespace materials
             }
             double Woodlength = 2 * (width * height) * 3.25;
             double Glassarea = 2 * (width * height);
-            Console.WriteLine($"Length of the wood = {woodlength} feet.");
-            Console.WriteLine($"Area of glass = {glassarea} square meters");
+            Console.WriteLine($"Length of the wood = {Woodlength} feet.");
+            Console.WriteLine($"Area of glass = {Glassarea} square meters");
         }
     }
 }
